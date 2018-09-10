@@ -1633,6 +1633,13 @@
 
     var networks = [
         {
+            name: "NIX",
+            onSelect: function() {
+                network = bitcoinjs.bitcoin.networks.nix;
+                setHdCoin(0);
+            },
+        },
+        {
             name: "AC - Asiacoin",
             onSelect: function() {
                 network = bitcoinjs.bitcoin.networks.asiacoin;
